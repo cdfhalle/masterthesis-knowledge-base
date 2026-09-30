@@ -8,6 +8,7 @@
 - [[deepswe-bench]] — DeepSWE Bench (arXiv:2607.07946); authored long-horizon SWE
 - [[swe-marathon]] — SWE Marathon (arXiv:2606.07682); ultra-long-horizon / Harbor
 - [[terminal-bench-4]] — Terminal-Bench 4.0 (tbench.ai; paper arXiv:2601.11868)
+- [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
 
 ## Notes
 _(none yet)_
