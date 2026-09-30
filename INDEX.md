@@ -11,7 +11,7 @@
 - [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
 
 ## Notes
-_(none yet)_
+- [[reasoning-traces-for-generated-code]] — idea: tie architectural reasoning and requirements directly to generated code
 
 ## Topics
 - [[architectural-reasoning-for-coding-agents]] — thesis framing: issue-tracker grounding, planning, and specification
