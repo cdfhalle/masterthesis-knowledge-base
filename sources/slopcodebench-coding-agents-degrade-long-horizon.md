@@ -25,40 +25,33 @@ tags:
   - verbosity
 ---
 
-# SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks
+# SlopCodeBench
 
-## Summary
-
-Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative benchmarks attempt to remedy this but heavily constrain an agent's design decision space, making it impossible to faithfully measure how their decisions shape future extensions. The authors introduce **SlopCodeBench** (SCBench): 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. Evolving specifications demand architectural decisions but leave internal structure to the agent. They measure **structural erosion** (concentrated complexity) and **verbosity** (redundant code). Across 15 coding agents, no agent fully solves any problem end-to-end; the best agent passes 14.8% of checkpoints. Quality degrades across checkpoints (erosion rises in 77% of trajectories; verbosity in 75.5%). Versus 473 open-source Python repos, agent code is 2.3× more verbose and 2.0× more eroded. Explicit quality guidance reduces initial verbosity/erosion by up to a third without slowing degradation rates.
+**Prefer the paper.** Below: a few anchors + figures only.
 
 ## Key points
 
-- **Failure mode targeted:** single-shot / heavily constrained iterative SWE benchmarks hide whether early design decisions remain extensible under future change—the practical failure when using agents outside benchmarks.
-- **Design principles:** no prescribed internal interfaces; no visible test suite; black-box, language-agnostic external contracts (CLI/API only). Agent workspace carries forward; agent pays for its own early choices.
-- **Metrics:** structural erosion = share of complexity mass in high-CC functions (CC > 10); verbosity = fraction of LOC that are AST-grep-flagged or structural clones.
-- **Results:** SOTA strict solve rate 14.8% (GPT 5.5); no problem fully solved; cost per checkpoint grows ~2.2× while relative lines changed fall; agents accumulate verbosity ~7× and erosion ~5× faster than human git histories.
-- **Prompting:** anti-slop / plan-first improve initial quality (up to ~1/3 less verbosity/erosion) but do not stop iterative degradation; average +12.1% cost/checkpoint and slight correctness drop.
-- **Artifact:** problems/code/leaderboard at https://www.scbench.ai
+- Agents must repeatedly extend **their own** workspace under evolving external contracts (36 problems / 196 checkpoints); no prescribed internals, tests hidden.
+- No agent solves any problem end-to-end; best strict checkpoint pass **14.8%**. Erosion ↑ in 77% of trajectories; verbosity ↑ in 75.5%.
+- vs 473 Python repos: agent code **2.3×** more verbose, **2.0×** more eroded; degrades ~7× / ~5× faster than human histories.
+- Quality prompts cut initial slop (up to ~⅓) but **do not** stop iterative degradation.
 
-## Relevance to thesis
+## Figures
 
-Targets the **actual point of failure when using SWE agents outside of benchmarks**: iterative extension under evolving specs, where local correctness can persist while architecture erodes. Worth exploring whether this connects to:
+![[assets/slopcodebench-fig1-iterative-evaluation.png]]
 
-1. **Agentic reasoning improvements via issue trackers** — e.g., whether structured issue/spec history could constrain or surface design decisions that SlopCodeBench leaves unconstrained, or whether issue-tracker grounding reduces erosion/verbosity under long-horizon edits.
-2. **MSR SpecMine Challenge** — e.g., whether mined specs / specification evolution patterns relate to SlopCodeBench's checkpointed evolving requirements, or whether SpecMine-style artifacts could inform better iterative agent evaluation or scaffolding.
+![[assets/slopcodebench-fig2-solve-rates-and-cost.png]]
 
-These links are **exploratory open questions**, not established claims from the paper.
+![[assets/slopcodebench-fig3-erosion-verbosity-trends.png]]
 
-## Quotes / excerpts
+![[assets/slopcodebench-fig4-agents-vs-humans.png]]
 
-> "Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup."
+![[assets/slopcodebench-fig5-prompting-does-not-stop-degradation.png]]
 
-> "SlopCodeBench provides the first measurement of code degradation under iterative extension, revealing that agents pass checkpoints while producing code that erodes and bloats with each turn."
+## Relevance
 
-> "Existing coding-agent benchmarks systematically undermeasure this failure mode, evaluating models once against complete task specifications. They measure whether an agent can produce correct code for the current specification, not whether that code remains extensible under future change."
+Concrete failure mode for SWE agents **outside** single-shot benchmarks. Open links to explore: issue-/spec-tracker grounding; [[msr-2027-mining-challenge]] / SpecMine evolving specs. See [[slopcodebench-failure-modes-outside-benchmarks]].
 
 ## Links
 
-- abs: https://arxiv.org/abs/2603.24755
-- pdf: https://arxiv.org/pdf/2603.24755
-- project: https://www.scbench.ai
+- abs: https://arxiv.org/abs/2603.24755 · pdf: https://arxiv.org/pdf/2603.24755 · project: https://www.scbench.ai

@@ -14,35 +14,23 @@ tags:
   - specmine
 ---
 
-# SlopCodeBench: failure modes outside SWE benchmarks (and open questions)
+# SlopCodeBench: failure modes outside benchmarks
 
-## Claim
+## Claim (from paper)
 
-**From the paper (supported):** Agentic coding agents that look competent on single-shot or heavily constrained iterative SWE benchmarks still fail under realistic iterative extension: they rarely solve evolving specs end-to-end, and when they pass checkpoints their own code **structurally erodes** and becomes **more verbose** over time—more so and faster than typical human repository histories. That gap is a concrete failure mode for using SWE agents **outside** benchmark setups.
+Agents that look fine on single-shot / constrained SWE benchmarks still fail under iterative extension: rare end-to-end solves; passing checkpoints while **structural erosion** and **verbosity** grow faster than in human repos. That is a real outside-benchmark failure mode. See figures on [[slopcodebench-coding-agents-degrade-long-horizon]].
 
-**Not claimed (exploration only):** Links to issue-tracker–based agentic reasoning, or to the MSR SpecMine Challenge, are open questions for this thesis—not findings asserted by SlopCodeBench.
+## Evidence (anchors only)
 
-## Evidence
+- 36 problems / 196 checkpoints; best strict pass **14.8%**; no full solves.
+- Erosion ↑ 77%, verbosity ↑ 75.5% of trajectories; vs humans **2.3×** / **2.0×** worse; ~7× / ~5× faster growth.
+- Quality prompts help the start, not the slope.
 
-From [[slopcodebench-coding-agents-degrade-long-horizon]] (arXiv:2603.24755):
+## Open questions (not paper claims)
 
-- Benchmark forces agents to extend **their own** prior workspace under evolving external contracts (36 problems / 196 checkpoints); no prescribed internals, no visible tests.
-- No evaluated agent fully solves any problem; best strict checkpoint pass rate **14.8%**.
-- Structural erosion rises in **77%** of trajectories; verbosity in **75.5%**.
-- vs 473 Python repos: agent code **2.3×** more verbose, **2.0×** more eroded; per-checkpoint growth ~**7×** / ~**5×** faster than human medians.
-- Quality-aware prompts cut initial slop (up to ~⅓) but **do not** slow degradation rates.
+1. Can issue-/spec-tracker history constrain early design choices that compound into erosion?
+2. Do SpecMine evolution patterns align with SCBench-style checkpointed requirement growth?
 
 ## Caveats
 
-- Paper evaluates a **Python track** of a language-agnostic design; harnesses are native CLI agents, not all frameworks.
-- Erosion/verbosity are specific operationalizations (CC-mass concentration; AST-grep + clone density)—not full maintainability.
-- Human comparison is a sampled commit panel, not matched task trajectories.
-- Thesis connections below are **hypotheses / questions**, not paper results.
-
-## Next steps
-
-Open questions to explore (do not treat as claims):
-
-1. **Issue trackers ↔ agentic reasoning:** Could structured issue/spec history (acceptance criteria, linked PRs, design discussions) reduce the unconstrained early decisions that SlopCodeBench shows compounding into erosion/verbosity? Or surface when an architecture must be rewritten before checkpoint failure cascades?
-2. **MSR SpecMine Challenge:** Do SpecMine-style mined specifications / evolution patterns align with SlopCodeBench's checkpointed requirement growth? Could SpecMine artifacts supply or evaluate the kind of evolving external contracts SCBench uses?
-3. Practical: skim SCBench problem list vs SpecMine outputs; note overlap with issue-driven SWE workflows; decide whether a short lit note or experiment sketch is warranted.
+Python-track eval; CC-mass / AST-grep+clone metrics; human panel ≠ matched tasks.

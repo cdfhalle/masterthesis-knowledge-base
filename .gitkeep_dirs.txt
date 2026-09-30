@@ -1,5 +1,6 @@
-sources/
-notes/
-topics/
-findings/
 .obsidian/
+assets/
+findings/
+notes/
+sources/
+topics/
