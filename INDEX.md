@@ -1,7 +1,7 @@
 # Index
 
 ## Sources
-_(none yet)_
+- [[slopcodebench-coding-agents-degrade-long-horizon]] — SlopCodeBench (arXiv:2603.24755)
 
 ## Notes
 _(none yet)_
@@ -10,4 +10,4 @@ _(none yet)_
 _(none yet)_
 
 ## Findings
-_(none yet)_
+- [[slopcodebench-failure-modes-outside-benchmarks]] — failure modes outside SWE benchmarks; open questions re SpecMine / issue trackers
