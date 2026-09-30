@@ -14,8 +14,9 @@
 _(none yet)_
 
 ## Topics
-_(none yet)_
+- [[architectural-reasoning-for-coding-agents]] — thesis framing: issue-tracker grounding, planning, and specification
 
 ## Findings
 - [[slopcodebench-failure-modes-outside-benchmarks]] — failure modes outside SWE benchmarks; open questions re SpecMine / issue trackers
 - [[slopcodebench-respecification-at-every-step]] — proposed test of OpenSpec-style re-specification at each change
+- [[issue-tracker-grounding-for-architectural-reasoning]] — hypothesis for using issue/PR history to improve architectural reasoning
