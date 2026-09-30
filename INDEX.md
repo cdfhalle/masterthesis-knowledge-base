@@ -18,3 +18,4 @@ _(none yet)_
 
 ## Findings
 - [[slopcodebench-failure-modes-outside-benchmarks]] — failure modes outside SWE benchmarks; open questions re SpecMine / issue trackers
+- [[slopcodebench-respecification-at-every-step]] — proposed test of OpenSpec-style re-specification at each change
