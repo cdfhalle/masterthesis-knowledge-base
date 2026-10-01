@@ -19,3 +19,7 @@ Extract named entities from issue-tracker discussions—components, concepts, co
 ## Exploration
 
 Compare direct entity-to-code links with a richer graph of entities, rationale, dependencies, and history. Test whether graph-grounded retrieval improves architectural decisions and reduces ambiguity, rather than merely adding context. See [[architectural-reasoning-for-coding-agents]] and [[issue-tracker-grounding-for-architectural-reasoning]].
+
+## Related work
+
+Survey filed at [[issue-entity-code-kg-related-work]] (SoftNER, DistALANER, KGCompass, RepoGraph, LocAgent; gap note [[issue-entity-kg-gap-vs-architectural-vocabulary]]).

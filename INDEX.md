@@ -10,10 +10,16 @@
 - [[swe-marathon]] — SWE Marathon (arXiv:2606.07682); ultra-long-horizon / Harbor
 - [[terminal-bench-4]] — Terminal-Bench 4.0 (tbench.ai; paper arXiv:2601.11868)
 - [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
+- [[softner-stackoverflow-ner]] — SoftNER / StackOverflowNER (ACL 2020; arXiv:2005.01634); 20-type software NER
+- [[distalaner-oss-named-entity-recognition]] — DistALANER (arXiv:2402.16159); distant+active OSS bug/CQA NER
+- [[kgcompass-repository-aware-knowledge-graphs]] — KGCompass (arXiv:2503.21710); issue/PR↔code KG for SWE repair
+- [[repograph-repository-level-code-graph]] — RepoGraph (ICLR 2025; arXiv:2410.14684); line-level repo graph plug-in
+- [[locagent-graph-guided-code-localization]] — LocAgent (arXiv:2503.09089); heterogeneous code graph + agent localization
 
 ## Notes
-- [[issue-tracker-entities-and-code-knowledge-graph]] — idea: map issue-tracker entities to code via a shared knowledge graph
 - [[reasoning-traces-for-generated-code]] — idea: tie architectural reasoning and requirements directly to generated code
+- [[issue-tracker-entities-and-code-knowledge-graph]] — idea: extract issue entities, map to code, shared KG vocabulary
+- [[issue-entity-code-kg-related-work]] — related work for issue NER / entity→code / software KGs (2018–2026)
 
 ## Topics
 - [[architectural-reasoning-for-coding-agents]] — thesis framing: issue-tracker grounding, planning, and specification
@@ -22,3 +28,4 @@
 - [[slopcodebench-failure-modes-outside-benchmarks]] — failure modes outside SWE benchmarks; open questions re SpecMine / issue trackers
 - [[slopcodebench-respecification-at-every-step]] — proposed test of OpenSpec-style re-specification at each change
 - [[issue-tracker-grounding-for-architectural-reasoning]] — hypothesis for using issue/PR history to improve architectural reasoning
+- [[issue-entity-kg-gap-vs-architectural-vocabulary]] — literature: localization KGs exist; shared architectural vocabulary underserved

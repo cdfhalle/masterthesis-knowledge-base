@@ -25,3 +25,7 @@ Here, architectural reasoning means recovering and making decisions about struct
 ## Framing
 
 Treat issue history and specifications as complementary records of intent: issues/PRs capture negotiated rationale, while specs make intended structure and acceptance criteria explicit. Evaluate both architectural decisions and downstream code quality, not just task completion.
+
+## Related mechanisms
+
+Issue-entity extraction and code KGs: [[issue-tracker-entities-and-code-knowledge-graph]], [[issue-entity-code-kg-related-work]], [[issue-entity-kg-gap-vs-architectural-vocabulary]].
