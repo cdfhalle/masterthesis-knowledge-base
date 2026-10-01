@@ -12,6 +12,7 @@
 - [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
 
 ## Notes
+- [[issue-tracker-entities-and-code-knowledge-graph]] — idea: map issue-tracker entities to code via a shared knowledge graph
 - [[reasoning-traces-for-generated-code]] — idea: tie architectural reasoning and requirements directly to generated code
 
 ## Topics
