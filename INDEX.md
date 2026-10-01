@@ -12,6 +12,12 @@
 - [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
 - [[softner-stackoverflow-ner]] — SoftNER / StackOverflowNER (ACL 2020; arXiv:2005.01634); 20-type software NER
 - [[distalaner-oss-named-entity-recognition]] — DistALANER (arXiv:2402.16159); distant+active OSS bug/CQA NER
+- [[bner-bug-specific-named-entity]] — BNER (ICPC 2018); Mozilla/Eclipse bug-report NER
+- [[dbner-bug-specific-ner-dnn]] — DBNER (JSS 2020); BiLSTM-CRF bug NER
+- [[bug-entities-relations-ase-2022]] — Bug entities + relations (ASE journal 2022)
+- [[softner-cloud-incidents-kg]] — SoftNER cloud incidents KG (arXiv:2101.05961); IcM NER→KG
+- [[wikiser-software-entity-recognition]] — WikiSER (ASE 2023; arXiv:2308.10564); Wikipedia software NER
+- [[t-frex-app-review-feature-ner]] — T-FREX (SANER 2024; arXiv:2401.03833); app-review feature NER
 - [[kgcompass-repository-aware-knowledge-graphs]] — KGCompass (arXiv:2503.21710); issue/PR↔code KG for SWE repair
 - [[repograph-repository-level-code-graph]] — RepoGraph (ICLR 2025; arXiv:2410.14684); line-level repo graph plug-in
 - [[locagent-graph-guided-code-localization]] — LocAgent (arXiv:2503.09089); heterogeneous code graph + agent localization
