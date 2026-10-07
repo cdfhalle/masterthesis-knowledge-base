@@ -28,6 +28,7 @@
 - [[reasoning-traces-for-generated-code]] — idea: tie architectural reasoning and requirements directly to generated code
 - [[issue-tracker-entities-and-code-knowledge-graph]] — idea: extract issue entities, map to code, shared KG vocabulary
 - [[issue-entity-code-kg-related-work]] — related work for issue NER / entity→code / software KGs (2018–2026)
+- [[ai-generated-code-quality-metrics]] — idea: metrics for AI-generated code quality / architectural degradation
 
 ## Topics
 - [[architectural-reasoning-for-coding-agents]] — thesis framing: issue-tracker grounding, planning, and specification
