@@ -11,6 +11,7 @@
 - [[terminal-bench-4]] — Terminal-Bench 4.0 (tbench.ai; paper arXiv:2601.11868)
 - [[ast-grep]] — AST-Grep structural search/rewrite; exploratory possible agent tooling
 - [[architecture-decision-record]] — ADR examples/templates; reference for auto-extracting decisions from issue trackers
+- [[architecture-without-architects-vibe-architecting]] — Architecture Without Architects / vibe architecting (arXiv:2604.04990); implicit agent architecture + research agenda
 - [[softner-stackoverflow-ner]] — SoftNER / StackOverflowNER (ACL 2020; arXiv:2005.01634); 20-type software NER
 - [[distalaner-oss-named-entity-recognition]] — DistALANER (arXiv:2402.16159); distant+active OSS bug/CQA NER
 - [[bner-bug-specific-named-entity]] — BNER (ICPC 2018); Mozilla/Eclipse bug-report NER

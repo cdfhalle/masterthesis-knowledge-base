@@ -31,3 +31,5 @@ Treat issue history and specifications as complementary records of intent: issue
 Issue-entity extraction and code KGs: [[issue-tracker-entities-and-code-knowledge-graph]], [[issue-entity-code-kg-related-work]], [[issue-entity-kg-gap-vs-architectural-vocabulary]].
 
 ADR templates as decision schemas: [[architecture-decision-record]].
+
+Implicit agent architecture / vibe architecting: [[architecture-without-architects-vibe-architecting]].
