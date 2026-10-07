@@ -23,3 +23,5 @@ Compare direct entity-to-code links with a richer graph of entities, rationale, 
 ## Related work
 
 Survey filed at [[issue-entity-code-kg-related-work]] (SoftNER, DistALANER, KGCompass, RepoGraph, LocAgent; gap note [[issue-entity-kg-gap-vs-architectural-vocabulary]]).
+
+Possible decision artifacts: [[architecture-decision-record]] (ADR templates for extracted rationale).

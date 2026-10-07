@@ -5,6 +5,7 @@ status: hypothesis
 related_sources:
   - "[[slopcodebench-coding-agents-degrade-long-horizon]]"
   - "[[specmine-large-scale-corpus-of-spec-driven-development-artifacts]]"
+  - "[[architecture-decision-record]]"
 added: 2026-09-30
 tags:
   - architectural-reasoning
